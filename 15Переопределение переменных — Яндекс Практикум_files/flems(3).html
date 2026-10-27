@@ -1,0 +1,100 @@
+
+<!-- saved from url=(0101)https://sandbox.practicum-team.ru/tasks/03-design/03-css-vars/03-redefining/example-04/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Минутка медитации</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(3).css">
+  <style id="styles/style.css">:root {
+  --pink: #feafe8;
+  --light-blue: #6dc1fd;
+  --black: #000;
+  --white: #fff;
+  --purple: #5f0dee;
+  --small: 32px;
+  --medium: 64px;
+  --large: 128px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  --background-color: var(--black);
+
+  display: grid;
+  place-items: center;
+  gap: var(--small);
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: var(--background-color);
+}
+
+.card {
+  --text-color: var(--white);
+  --padding: var(--small);
+
+  width: calc(var(--large) * 3);
+  border: 3px solid var(--pink);
+  padding: var(--padding);
+  color: var(--text-color);
+}
+
+.title {
+  margin-bottom: var(--small);
+  text-align: center;
+}
+
+.accent {
+  display: block;
+  color: var(--light-blue);
+  font-size: var(--small);
+  line-height: 1;
+}
+
+.bright {
+  --text-color: var(--black);
+
+  color: var(--text-color);
+  background-color: var(--pink);
+}
+
+.bright .accent {
+  color: var(--purple);
+}
+</style></head>
+  <body>
+    <div class="card">
+      <h2 class="title">
+        Вспомни то, что <span class="accent">радует</span> тебя
+      </h2>
+      <p class="text">
+        Запомни это ощущение и возвращайся к нему в сложные моменты своей жизни.
+      </p>
+    </div>
+    <div class="card bright">
+      <h2 class="title">
+        Закройте глаза и подышите <span class="accent">«квадратом»</span>
+      </h2>
+      <p class="text">
+        Раз, два, три, четыре. Делайте вдох на 4 счёта, задержите дыхание на 4
+        счёта, выдыхайте на 4 счёта, снова задержите дыхание на 4 счёта.
+      </p>
+    </div>
+  
+
+</body></html>

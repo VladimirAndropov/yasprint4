@@ -1,0 +1,75 @@
+
+<!-- saved from url=(0100)https://sandbox.practicum-team.ru/tasks/03-design/03-css-vars/06-dark-mode/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Чёрно-белый мир</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100%;
+  margin: 0;
+  color: #152028;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.something {
+  width: max(250px, 50vw);
+  height: max(250px, 50vw);
+  background-image: url(../svg/tsss.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  width: 27px;
+  height: 27px;
+  accent-color: #000;
+}
+
+input[type='checkbox']:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 0;
+}
+</style></head>
+  <body>
+    <h1 class="title">Следуй за белым кроликом!</h1>
+
+    <div class="something"></div>
+
+    <div class="theme-toggler">
+      <label class="theme-toggler__label">
+        Переключить тему
+        <input type="checkbox" class="theme-toggler__control"></label>
+    </div>
+  
+
+</body></html>

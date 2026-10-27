@@ -1,0 +1,62 @@
+
+<!-- saved from url=(0098)https://sandbox.practicum-team.ru/tasks/03-design/02-raster/06-lazy-load/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ленивая загрузка</title>
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 890px;
+  margin: 0;
+  padding: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: #5f0dee;
+}
+
+.section {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  min-height: 720px;
+  margin: 0 auto;
+  border: 10px solid #fff;
+  box-shadow: 10px 10px 0 #000;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.section + .section {
+  margin-top: 30px;
+}
+
+.section__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+</style></head>
+  <body>
+    <section class="section">
+      <img src="./image-1.jpg" alt="Фото гор." class="section__image">
+    </section>
+    <section class="section">
+      <img src="./image-2.jpg" alt="Фото гор." class="section__image" loading="lazy">
+    </section>
+    <section class="section">
+      <img src="./image-3.jpg" alt="Фото гор." class="section__image" loading="lazy">
+    </section>
+    <section class="section">
+      <img src="./image-4.jpg" alt="Фото гор." class="section__image" loading="lazy">
+    </section>
+    <section class="section">
+      <img src="./image-5.jpg" alt="Фото гор." class="section__image" loading="lazy">
+    </section>
+  
+
+</body></html>

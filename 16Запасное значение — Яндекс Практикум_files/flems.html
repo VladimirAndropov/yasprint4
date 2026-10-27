@@ -1,0 +1,77 @@
+
+<!-- saved from url=(0105)https://sandbox.practicum-team.ru/tasks/03-design/03-css-vars/04-default-values/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тарифы</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-width: 850px;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.title {
+  text-align: center;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 850px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+.plan {
+  border: 5px solid var(--border-color, black);
+  padding: 25px;
+  color: var(--text-color, black);
+  background-color: var(--bkg-color, white);
+}
+
+.plan-advanced {
+  --border-color: #6dc1fd;
+  --text-color: white;
+  --bkg-color: #5f0dee;
+}
+
+.plan-vip {
+  --border-color: #feafe8;
+  --text-color: white;
+  --bkg-color: #fd24af;
+}
+</style></head>
+  <body>
+    <h1 class="title">Тарифы</h1>
+
+    <div class="plans">
+      <div class="plan">
+        <h2 class="plan__title">Простой</h2>
+        <p class="plan__text">Ну, нормально</p>
+      </div>
+      <div class="plan plan-advanced">
+        <h2 class="plan__title">Продвинутый</h2>
+        <p class="plan__text">Сойдёт</p>
+      </div>
+      <div class="plan plan-vip">
+        <h2 class="plan__title">VIP</h2>
+        <p class="plan__text">Тебе в самый раз</p>
+      </div>
+    </div>
+  
+
+</body></html>

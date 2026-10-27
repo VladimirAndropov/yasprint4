@@ -1,0 +1,94 @@
+
+<!-- saved from url=(0101)https://sandbox.practicum-team.ru/tasks/03-design/03-css-vars/03-redefining/example-02/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Минутка медитации</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(1).css">
+  <style id="styles/style.css">:root {
+  --pink: #feafe8;
+  --light-blue: #6dc1fd;
+  --black: #000;
+  --white: #fff;
+  --purple: #5f0dee;
+  --small: 32px;
+  --medium: 64px;
+  --large: 128px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  gap: 32px;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: #000;
+}
+
+.card {
+  width: calc(128px * 3);
+  border: 3px solid #feafe8;
+  padding: 32px;
+  color: #fff;
+}
+
+.title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.accent {
+  display: block;
+  color: #6dc1fd;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.bright {
+  color: #000;
+  background-color: #feafe8;
+}
+
+.bright .accent {
+  color: #5f0dee;
+}
+</style></head>
+  <body>
+    <div class="card">
+      <h2 class="title">
+        Вспомните то, что вас <span class="accent">радует</span>
+      </h2>
+      <p class="text">
+        Запомните это ощущение и возвращайтесь к нему в сложные моменты вашей
+        жизни.
+      </p>
+    </div>
+    <div class="card bright">
+      <h2 class="title">
+        Закройте глаза и подышите <span class="accent">«квадратом»</span>
+      </h2>
+      <p class="text">
+        Раз, два, три, четыре. Делайте вдох на 4 счёта, задержите дыхание на 4
+        счёта, выдыхайте на 4 счёта, снова задержите дыхание на 4 счёта.
+      </p>
+    </div>
+  
+
+</body></html>

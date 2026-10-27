@@ -1,0 +1,205 @@
+
+<!-- saved from url=(0107)https://sandbox.practicum-team.ru/tasks/03-design/06-different-devices/05-prefers/example-03/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Различные варианты элементов</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(2).css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page {
+  min-width: 500px;
+  min-height: calc(100vh - 100px);
+  padding: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+  accent-color: #000;
+}
+
+h1 {
+  width: fit-content;
+  margin: 0 auto 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  padding: 45px;
+  background-color: #80d994;
+}
+
+button {
+  padding: 10px 65px;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.6;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: none;
+  padding: 0;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #000;
+  cursor: pointer;
+}
+
+label span {
+  display: block;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+input[type='text'] {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+}
+
+select {
+  border: 1px solid #000;
+  padding: 10px 15px;
+}
+
+input[type='checkbox'] {
+  width: 27px;
+  height: 27px;
+}
+
+input[type='radio'] {
+  width: 27px;
+  height: 27px;
+}
+
+input[type='range'] {
+  width: 100%;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 26px;
+  height: 16px;
+  margin-block-start: -3px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+  box-sizing: border-box;
+  width: 26px;
+  height: 16px;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+input[type='range']:disabled::-webkit-slider-runnable-track {
+  opacity: 0.6;
+}
+</style></head>
+  <body class="page">
+    <h1>Просто текст</h1>
+    <form>
+      <fieldset>
+        Текстовое поле:
+        <label class="input">
+          <input type="text" placeholder="Плейсхолдер">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        Чекбоксы:
+        <label>
+          <input type="checkbox" value="Чекбокс 1" name="checkbox" checked="">
+          <span>Чекбокс 1 (Выбран)</span>
+        </label>
+        <label>
+          <input type="checkbox" value="Чекбокс 2" name="checkbox">
+          <span>Чекбокс 2</span>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        Радиокнопки:
+        <label class="radio-label">
+          <input type="radio" name="radio" value="Вариант 1" checked="">
+          <span>Вариант 1 (Выбран)</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="radio" value="Вариант 2">
+          <span>Вариант 2</span>
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="radio" value="Вариант 3">
+          <span>Вариант 3</span>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        Селект:
+        <select>
+          <option value="Вариант 1">Вариант 1</option>
+          <option value="Вариант 2">Вариант 2</option>
+          <option value="Вариант 3">Вариант 3</option>
+          <option value="Вариант 4">Вариант 4</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        Диапазон:
+        <label>
+          <input type="range" min="0" max="100" value="40" step="10">
+        </label>
+      </fieldset>
+
+      <button>Кнопка</button>
+      <button disabled="">Кнопка выключена</button>
+    </form>
+  
+
+</body></html>

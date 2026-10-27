@@ -1,0 +1,66 @@
+
+<!-- saved from url=(0095)https://sandbox.practicum-team.ru/tasks/03-design/05-grid/03-auto-row/example-03/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гриды</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(2).css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 650px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: #feafe8;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 160px);
+  grid-template-rows: 100px;
+  grid-auto-rows: 50px 150px;
+  gap: 10px;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+.block--1 {
+  background-color: #fff;
+}
+
+.block--2 {
+  background-color: #c4c4c4;
+}
+
+.block--3 {
+  background-color: #80d994;
+}
+</style></head>
+  <body>
+    <div class="container">
+      <div class="block block--1">Снова</div>
+      <div class="block">нужно</div>
+      <div class="block block--2">выстроить</div>
+      <div class="block block--2">красиво</div>
+      <div class="block block--1">эти</div>
+      <div class="block block--3">цветные</div>
+      <div class="block">квадратики</div>
+      <div class="block block--3">с текстом</div>
+    </div>
+  
+
+</body></html>

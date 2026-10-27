@@ -1,0 +1,183 @@
+
+<!-- saved from url=(0111)https://sandbox.practicum-team.ru/tasks/03-design/04-units-and-funcs/07-min-max-clamp/example-05/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Единицы измерения и функции</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(4).css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #5f0dee;
+}
+
+.parent {
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 60px 40px;
+}
+
+.login__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(100%, 320px);
+  margin: auto;
+  border: 1px solid #000;
+  padding: 15px 30px;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #ffc802;
+  cursor: pointer;
+}
+
+.login__icon {
+  width: 3em;
+}
+
+.description {
+  width: 100%;
+  background: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.description-p {
+  /* Код здесь */
+  margin: 0 0 0 auto;
+  padding: 12px 25px;
+  color: #fff;
+  background-color: #5f0dee;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+} 
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 40px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.grid-item {
+  border: 1px solid black;
+  padding: 25px;
+  font-style: italic;
+  word-break: break-word;
+  background-color: #fff;
+}
+
+.main-block {
+  width: max(50%, 450px);
+  border: 1px solid black;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.aside-block {
+  width: min(50%, 450px);
+  border: 1px solid black;
+  border-right: none;
+  background-image: url(./images/img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+</style></head>
+  <body>
+    <div class="parent">
+      <a class="login__link">
+        <svg class="login__icon" viewBox="0 0 64 64">
+          <path d="m53 32c0-.022 0-.045 0-.068 1.941-2.182 3-4.965 3-7.932 0-6.617-5.383-12-12-12-.685 0-1.36.064-2.021.178-.026-.027-.048-.055-.075-.082-2.64-2.641-6.158-4.096-9.904-4.096-3.896 0-7.423 1.603-9.963 4.18-.666-.115-1.346-.18-2.037-.18-6.617 0-12 5.383-12 12 0 2.967 1.059 5.75 3 7.932v.068c0 6.098 4.574 11.136 10.509 11.891l-13.509 4.686v7.423h4v-4.577l12.803-4.441 2.71 9.018h8.975l2.721-9.058 12.791 4.477v4.581h4v-7.419l-13.421-4.697c5.872-.777 10.421-5.803 10.421-11.884zm-1-8c0 2.188-.862 4.222-2.427 5.729l-.711.684.11.979c.022.198.028.403.028.608 0 2.889-1.545 5.418-3.86 6.824.56-1.53.86-3.159.86-4.824v-12c0-2.073-.466-4.11-1.338-5.966 4.102.338 7.338 3.778 7.338 7.966zm-20-12c2.678 0 5.19 1.039 7.073 2.921.237.238.459.485.661.728 1.483 1.805 2.266 4.001 2.266 6.351v12c0 2.471-.901 4.838-2.541 6.667-1.895 2.118-4.613 3.333-7.459 3.333-5.514 0-10-4.486-10-10v-12c0-5.514 4.486-10 10-10zm-17 20c0-.205.006-.41.027-.607l.11-.979-.711-.684c-1.564-1.508-2.426-3.542-2.426-5.73 0-4.193 3.245-7.637 7.354-7.967-.859 1.813-1.354 3.831-1.354 5.967v12c0 1.705.322 3.333.883 4.846-2.322-1.402-3.883-3.942-3.883-6.846zm15.487 20-1.287-4.282c.905.184 1.841.282 2.8.282.949 0 1.886-.103 2.802-.29l-1.289 4.29z"></path>
+          <path d="m30 36c0-1.103.897-2 2-2s2 .897 2 2v1h4v-1c0-3.309-2.691-6-6-6s-6 2.691-6 6v1h4z"></path>
+        </svg>
+        Хочу попасть в&nbsp;страну чудес
+      </a>
+      <div class="main-content">
+        <aside class="aside-block"></aside>
+        <main class="main-block">
+          <h2 class="title">Приключения Алисы в Стране чудес</h2>
+          <p class="text">
+            Сказка математика, поэта и прозаика Льюиса Кэрролла, изданная в&nbsp;1865
+            году. Считается одним из лучших образцов литературы в&nbsp;жанре абсурда.
+          </p>
+        </main>
+      </div>
+
+      <div class="description">
+        <p class="description-p">
+          Всё началось с того, что Алиса увидела белого кролика, в руке у
+          которого были карманные часы. И несмотря на весь абсурд происходящего
+          — последовала за ним в нору, а дальше…
+        </p>
+        <p class="description-p">
+          Двери и ключи, «Выпей меня» и «Съешь меня», Гусеница и Чеширский кот.
+          И, конечно, Безумный Шляпник и Червонная королева.
+        </p>
+        <p class="description-p">
+          По легенде, всю эту невероятную историю Кэрролл (настоящее имя
+          которого — Чарльз Лютвидж Доджсон) придумал, когда в летний день
+          катался на лодке по Темзе в обществе трёх дочерей вице-канцлера
+          Оксфордского университета. Было жарко и скучно, и девочки попросили
+          Кэролла развлечь их рассказом.
+        </p>
+      </div>
+
+      <ul class="grid-wrapper">
+        <li class="grid-item">
+          <p>— А&nbsp;где я&nbsp;могу найти кого-нибудь нормального?</p>
+          <p>
+            — Нигде, — ответил Кот, — нормальных не&nbsp;бывает. Ведь все&nbsp;такие
+            разные и&nbsp;непохожие. И&nbsp;это, по-моему, нормально.
+          </p>
+        </li>
+        <li class="grid-item">
+          <p>
+            План, что и говорить, был превосходный: простой и ясный, лучше не
+            придумать. Недостаток у него был только один: было совершенно
+            неизвестно, как привести его в исполнение.
+          </p>
+        </li>
+        <li class="grid-item">
+          <p>Думай о&nbsp;смысле, а&nbsp;слова&nbsp;придут сами.</p>
+        </li>
+        <li class="grid-item">
+          <p>
+            Я видала такую чепуху, по сравнению с которой эта чепуха — толковый
+            словарь.
+          </p>
+        </li>
+        <li class="grid-item">
+          <p>
+            Не грусти. Рано или&nbsp;поздно всё&nbsp;станет понятно, всё&nbsp;станет на&nbsp;свои
+            места и&nbsp;выстроится в&nbsp;единую красивую схему, как&nbsp;кружева. Станет
+            понятно, зачем всё&nbsp;было нужно, потому что&nbsp;всё будет&nbsp;правильно.
+          </p>
+        </li>
+        <li class="grid-item">
+          <p>
+            Если в&nbsp;мире всё&nbsp;бессмысленно, — сказала Алиса, — что&nbsp;мешает выдумать
+            какой-нибудь&nbsp;смысл?
+          </p>
+        </li>
+      </ul>
+    </div>
+  
+
+</body></html>

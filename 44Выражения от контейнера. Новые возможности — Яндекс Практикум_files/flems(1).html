@@ -1,0 +1,290 @@
+
+<!-- saved from url=(0121)https://sandbox.practicum-team.ru/tasks/03-design/06-different-devices/09-containers-new-opport/example-02/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контейнеры</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style(1).css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: minmax(900px, auto) 330px;
+  grid-template-rows: repeat(3, auto);
+  gap: 25px;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  align-items: center;
+  padding: 25px;
+  background-color: #ffc802;
+}
+
+.header__title {
+  font-weight: 800;
+  font-size: 31px;
+  text-transform: uppercase;
+}
+
+.menu {
+  width: 17px;
+  height: 17px;
+  border: none;
+  background-color: transparent;
+  background-image: url(https://code.s3.yandex.net/web-code/images/burger-close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.menu:focus {
+  outline: 2px solid #000;
+  outline-offset: 0;
+}
+
+.sidebar {
+  --bg-color: #ffc802;
+
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / -1;
+  grid-row: 2 / -2;
+  gap: 25px;
+  padding: 25px;
+  background-color: var(--bg-color);
+  container-type: inline-size;
+}
+
+.sidebar__title {
+  font-weight: 800;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.other-goods {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -2;
+  grid-row: 2 / -2;
+}
+
+.cards {
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 25px;
+  padding-left: 25px;
+  list-style-type: none;
+}
+
+.cards__item {
+  display: flex;
+  container-type: inline-size;
+}
+
+.cards__item:nth-child(1) {
+  grid-column: 1 / 5;
+  grid-row: 1 / 6;
+}
+
+.cards__item:nth-child(2) {
+  grid-column: -6 / -1;
+  grid-row: 1 / 6;
+}
+
+.cards__item:nth-child(3) {
+  grid-column: 1 / -1;
+  grid-row: -1 / -5;
+}
+
+.card {
+  display: flex;
+  border: 1px solid #000;
+  cursor: move;
+}
+
+.card_drag {
+  opacity: 0.3;
+}
+
+.card.over {
+  outline: 3px dotted #000;
+}
+
+.card__img {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 55%;
+  min-height: 180px;
+  border-inline-end: 1px solid #000;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card__add-button {
+  border: 1px solid #000;
+  padding: 10px 40px;
+  color: #000;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.card__add-button:hover {
+  box-shadow: inset 0 0 0 100px rgb(0 0 0 / 0.15);
+  cursor: pointer;
+}
+
+.card__add-button:focus {
+  outline: 2px solid #000;
+  outline-offset: 0;
+}
+
+.card__text {
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background-color: #ffc802;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  grid-row: -1 / -2;
+}
+
+@container (width <= 850px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card__img {
+    max-width: initial;
+    border-block-end: 1px solid #000;
+  }
+}
+
+@container (width <= 280px) {
+  .card__more {
+    display: none;
+  }
+}
+
+@container style(--bg-color: #ffc802) {
+  .card__content {
+    background-color: #fff;
+  }
+}
+</style></head>
+  <body class="page">
+    <header class="header">
+      <h1 class="header__title">Выбери свою Тардис:</h1>
+      <button class="menu" aria-label="Открыть меню"></button>
+    </header>
+    <main class="content">
+      <ul class="cards">
+        <li class="cards__item">
+          <article class="card card_size_m" draggable="true">
+            <img class="card__img" src="./13(1).jpg" alt="Консольная комната тардир в сине-жёлто-оранжевых тонах">
+            <div class="card__content">
+              <p class="card__text">
+                Яркий красочный интерьер с контрастами кобальтового синего и
+                жёлто-оранжевого.
+              </p>
+              <button class="card__add-button">
+                Беру!
+                <span class="card__more">Дайте две!</span>
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="card card_size_l" draggable="true">
+            <img class="card__img" src="./11(1).jpg" alt="Консольная комната тардис в оранжевых тонах">
+            <div class="card__content">
+              <p class="card__text">
+                Стиль, сочетающий в себе чёткие линии и глубокие оранжевые тона,
+                создает уникальную атмосферу захватывающего путешествия во
+                времени и пространстве.
+              </p>
+              <button class="card__add-button">
+                Беру!
+                <span class="card__more">Дайте две!</span>
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="cards__item">
+          <article class="card card_size_xl" draggable="true">
+            <img class="card__img" src="./12(1).jpg" alt="Консольная комната тардис в тёмных тонах">
+            <div class="card__content">
+              <p class="card__text">
+                Cовершенно новый уровень космического дизайна! Тёмные тона и
+                белый свет лампочек создают уникальный контраст и создают
+                ощущение, что вы находитесь в самом центре космической станции,
+                готовой отправиться в захватывающее путешествие.
+              </p>
+              <button class="card__add-button">
+                Беру!
+                <span class="card__more">Дайте две!</span>
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+
+    <aside class="sidebar">
+      <h2 class="sidebar__title">Другие варианты:</h2>
+      <ul class="other-goods">
+        <li class="cards__item">
+          <article class="card card_size_s card_type_white" draggable="true">
+            <img class="card__img" src="./10(1).jpg" alt="Консольная комната тардис в медово-жёлтых тонах">
+            <div class="card__content">
+              <p class="card__text">
+                Медово-жёлтые тона создают тёплую и уютную атмосферу,
+                заставляющую расслабиться и наслаждаться путешествием.
+              </p>
+              <button class="card__add-button">
+                Беру!
+                <span class="card__more">Дайте две!</span>
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </aside>
+
+    <footer class="footer"></footer>
+    <script charset="utf-8" src="./script(1).js.загрузка"></script>
+  
+
+</body></html>

@@ -1,0 +1,79 @@
+
+<!-- saved from url=(0103)https://sandbox.practicum-team.ru/tasks/03-design/03-css-vars/02-how-to-write/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Переменные в CSS</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">:root {
+  --brand-color: #80d994;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  gap: 25px;
+  min-width: 850px;
+  min-height: 100%;
+  margin: 0;
+  padding: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted-l.svg);
+}
+
+.card {
+  width: 50%;
+  min-width: 350px;
+  border: 1px solid black;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.card__shadow {
+  filter: drop-shadow(10px 10px var(--brand-color));
+}
+
+.card__border {
+  border: 3px solid var(--brand-color);
+}
+
+.card__background {
+  background-color: var(--brand-color);
+}
+</style></head>
+  <body>
+    <div class="card card__shadow">
+      <p>
+        Первую в мире линию метрополитена запустили в Лондоне 10 января 1863
+        года. Её длина составила 6 км, глубина — 41 м.
+      </p>
+    </div>
+    <div class="card card__border">
+      <p>
+        Глубoчaйшaя cтaнция мeтpo в Poccии pacпoлoжeнa в Caнкт-Пeтepбуpгe. Это
+        станция «Адмиралтейская». Oнa дoлжнa былa зapaбoтaть eщё в 1997 гoду, нo
+        из-зa cпopoв o тoм, гдe дoлжeн быть вecтибюль, cтaнция былa зaпущeнa
+        тoлькo в 2011. Eё глубинa — 86 м.
+      </p>
+    </div>
+    <div class="card card__background">
+      <p>
+        Глубинa cтaнции «Baшингтoн-Пapк», чтo pacпoлaгaeтcя в штaтe Opeгoн, США
+        — 80 м. Oткpытиeм cчитaeтcя 1998 гoд. Cтaнция pacпoлoжeнa пoд xoлмoм —
+        этим oбъяcняeтcя eё глубинa.
+      </p>
+    </div>
+  
+
+</body></html>
